@@ -8,6 +8,7 @@ Created on Wed Mar  7 09:53:45 2018
 import numpy as np
 
 class Perceptron:
+    "perceptron machine, input units and activator function"
     def __init__(self, input_num, activator):
         self.activator = activator
         self.bais = 0
@@ -15,6 +16,7 @@ class Perceptron:
         self.num = input_num
         
     def __str__(self):
+        "print weight and bais"
         return 'weight : {} \nbias : {}'.format(self.weight, self.bais)
     
     def predict(self, input_vec):
