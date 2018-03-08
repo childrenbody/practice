@@ -39,8 +39,7 @@ class Perceptron:
         self.weight = self.weight + rate*delta*input_vec.reshape(self.num, 1)
         self.bais += rate*delta
         
-def step(x):
-    return 1 if x > 0 else 0
+step = lambda x: 1 if x > 0 else 0
 
 if __name__ == '__main__':
     def make_test_data(num):
